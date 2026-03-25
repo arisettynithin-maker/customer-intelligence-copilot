@@ -3,6 +3,7 @@
 ### AI-Powered Customer Analytics & Decision Intelligence Platform
 
 🔗 **Live App:** https://customer-intelligence-copilot.streamlit.app/
+
 📂 **Repository:** https://github.com/arisettynithin-maker/customer-intelligence-copilot
 
 ---
