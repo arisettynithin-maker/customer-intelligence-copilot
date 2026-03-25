@@ -2,7 +2,7 @@
 
 ### AI-Powered Customer Analytics & Decision Support Tool
 
-🔗 **Live App:** *(Paste your deployed app link here)*
+🔗 **Live App:**  
 📂 **Repository:** https://github.com/arisettynithin-maker/customer-intelligence-copilot
 
 ---
