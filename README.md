@@ -144,17 +144,14 @@ Unlike traditional dashboards, this system:
 
 ```bash
 customer-intelligence-copilot/
-│
-├── app.py
-├── analysis.py
-├── visualization.py
-├── insight_agent.py
-├── report_generator.py
 ├── data/
-├── charts/
+├── pages/
 ├── screenshots/
-├── requirements.txt
-└── README.md
+├── src/
+├── gitignore
+├── README.md
+├── app.py
+└── requirements.txt
 ```
 
 ---
