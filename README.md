@@ -1,204 +1,140 @@
-# 🚀 Customer Intelligence Copilot
+# Customer Intelligence Copilot
 
-### AI-Powered Customer Analytics & Decision Intelligence Platform
+AI-powered customer analytics application built to turn transaction data into decision-ready insight across churn, lifetime value, segmentation, experimentation, and data quality review.
 
-🔗 **Live App:** https://customer-intelligence-copilot.streamlit.app/
+Live app: https://customer-intelligence-copilot.streamlit.app/
 
-📂 **Repository:** https://github.com/arisettynithin-maker/customer-intelligence-copilot
+## Project Overview
 
----
+Customer analytics often lives across static dashboards, spreadsheet analysis, and ad hoc interpretation. This project brings those workflows together in a single application that helps teams move from raw transactions to practical customer decisions faster.
 
-## ⚡ 1-Minute Demo
+The app combines analytical modelling, business-focused visualisation, and AI-assisted interpretation in a recruiter-friendly example of how analytics work can be packaged as a usable product.
 
-A business team wants to understand customer behavior and improve revenue.
+## Business Problem
 
-Using this tool:
+Teams often know they need to improve retention, customer value, and growth, but the path from raw transaction data to action is slow:
 
-1. Upload customer transaction data (or use demo dataset)
-2. The system cleans, standardizes, and enriches the data
-3. It analyzes:
+- churn risk is hard to detect early
+- customer value is unevenly distributed
+- segmentation work is repeated manually
+- experiment recommendations are not consistently connected to the data
 
-   * Customer segments
-   * Churn risk
-   * Lifetime value
-   * Revenue trends
-4. The AI Copilot generates:
+This creates delay between analysis and action.
 
-   * Key insights
-   * Risk signals
-   * Actionable recommendations
+## Solution / Approach
 
-👉 **Result:** Raw data → Executive-ready decisions in seconds
+This project turns customer transaction data into a guided decision-support workflow:
 
----
+- standardises and prepares transactional data
+- evaluates churn risk and customer value
+- segments customers into meaningful groups
+- surfaces business insights and recommended actions
+- adds an AI-powered "Ask the Data" layer for faster interpretation
 
-## 🖼️ Product Walkthrough
+The result is an analytics product that feels closer to a decision tool than a static dashboard.
 
-### 🏠 Home & Entry Point
+## Tech Stack
+
+- Python
+- Streamlit
+- Pandas
+- Plotly
+- LLM-powered analytics interactions
+
+## Key Features
+
+- Executive overview of customer performance
+- Churn risk analysis
+- LTV and value distribution analysis
+- Customer segmentation
+- Experiment recommendation layer
+- Data quality checks
+- AI-powered "Ask the Data" workflow
+
+## Outputs / App Screenshots
+
+### Home
 
 ![Home](./screenshots/Home%20Page.png)
 
-### 📊 Executive Overview Dashboard
+### Executive Overview
 
-![Executive](./screenshots/Executive%20Overview.png)
+![Executive Overview](./screenshots/Executive%20Overview.png)
 
-### ⚠️ Churn Risk Analysis
+### Churn Risk
 
-![Churn](./screenshots/Churn%20Risk.png)
+![Churn Risk](./screenshots/Churn%20Risk.png)
 
-### 💰 LTV & Value Distribution
+### LTV and Value
 
-![LTV](./screenshots/LTV%20and%20Value.png)
+![LTV and Value](./screenshots/LTV%20and%20Value.png)
 
-### 🧩 Customer Segmentation
+### Segmentation
 
 ![Segmentation](./screenshots/Segmentation.png)
 
-### 🧪 Experiment Recommendations
+### Experiment Recommendations
 
 ![Experiments](./screenshots/Experiments.png)
 
-### 📉 Data Quality Layer
+### Data Quality
 
-![DataQuality](./screenshots/Data%20Quality.png)
+![Data Quality](./screenshots/Data%20Quality.png)
 
-### 🤖 Ask the Data (AI Interface)
+### Ask the Data
 
-![Ask](./screenshots/Ask%20the%20Data.png)
+![Ask the Data](./screenshots/Ask%20the%20Data.png)
 
----
+## Business Impact / Insights
 
-## 📊 Real Insights from the System
+Using the included retail dataset, the app demonstrates how analytics can move from description to decision support:
 
-Using the built-in retail dataset:
+- highlights revenue concentration across top-value customers
+- identifies customers at risk of churn
+- surfaces dormant and recoverable segments
+- supports retention and experimentation prioritisation
+- reduces manual effort needed to convert transaction data into actionable insight
 
-* 💰 **Total Revenue:** ~$17.5M
-* 📈 **Top 10% customers contribute ~64% of revenue**
-* ⚠️ **Churn Rate:** ~59%
-* 🎯 **High-value at-risk customers identified:** 55
-* 💸 **Revenue at risk:** ~$6.45M
+This is the kind of product thinking that can make analytics more useful to commercial, growth, and customer teams.
 
----
+## Repository Structure
 
-## 🧠 Key Business Insights
-
-* Revenue is highly concentrated among top customers → retention is critical
-* Significant drop-off across cohorts → onboarding and engagement gaps
-* Dormant and at-risk segments represent major recovery opportunities
-* Repeat customers show strong value → incentivizing second purchase is key
-
----
-
-## 🚀 Recommended Actions (Generated by Copilot)
-
-* 🎯 Launch win-back campaigns for high-value inactive customers
-* ⚡ Improve onboarding to reduce early churn
-* 💎 Offer personalized incentives to top-value segments
-* 🔁 Encourage second purchase behavior to boost LTV
-
----
-
-## 🤖 AI Copilot – What It Actually Does
-
-Unlike traditional dashboards, this system:
-
-* Translates data → insights
-* Translates insights → actions
-
-### Example Output:
-
-**Insight Summary:**
-
-* High-value users dominate revenue contribution
-* Early-stage churn is significant
-
-**Recommended Actions:**
-
-* Prioritize retention for top 10% customers
-* Introduce onboarding nudges for new users
-* Target dormant users with reactivation campaigns
-
----
-
-## ⚙️ Core Features
-
-* 📊 Executive dashboards (Revenue, Customers, Trends)
-* ⚠️ Churn risk detection (RFM-based logic)
-* 💰 LTV & value distribution analysis
-* 🧩 Customer segmentation engine
-* 🧪 Experimentation & campaign recommendations
-* 📉 Data quality validation layer
-* 🤖 Natural-language “Ask the Data” interface
-
----
-
-## 🛠️ Tech Stack
-
-* **Python** (Pandas, NumPy)
-* **Streamlit** (UI & app framework)
-* **LLM Integration** (AI insights & recommendations)
-* **Matplotlib / Plotly** (visualization)
-
----
-
-## 📂 Project Structure
-
-```bash
-customer-intelligence-copilot/
-├── data/
-├── pages/
-├── screenshots/
-├── src/
-├── gitignore
+```text
+.
 ├── README.md
 ├── app.py
-└── requirements.txt
+├── requirements.txt
+├── pages/
+│   ├── 1_Executive_Overview.py
+│   ├── 2_Churn_Risk.py
+│   ├── 3_LTV_and_Value.py
+│   ├── 4_Segmentation.py
+│   ├── 5_Experiments.py
+│   ├── 6_Data_Quality.py
+│   └── 7_Ask_the_Data.py
+├── src/
+│   ├── ask_data.py
+│   ├── churn.py
+│   ├── data_prep.py
+│   ├── feature_engineering.py
+│   ├── insights.py
+│   ├── ltv.py
+│   ├── recommendations.py
+│   ├── segmentation.py
+│   └── utils.py
+└── screenshots/
 ```
 
----
-
-## ▶️ Run Locally
+## How to Run
 
 ```bash
-git clone https://github.com/arisettynithin-maker/customer-intelligence-copilot.git
-cd customer-intelligence-copilot
-
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
----
+## Future Improvements
 
-## 🏆 Why This Project Stands Out
-
-This is not just an analytics project.
-
-It demonstrates:
-
-* Product thinking in data
-* AI-assisted decision making
-* End-to-end data workflow (cleaning → modeling → insight → action)
-
-👉 This reflects how modern data teams operate today.
-
----
-
-## 🔬 Future Improvements
-
-* Add real-time data pipelines (streaming ingestion)
-* Integrate ML-based churn & LTV prediction models
-* Deploy scalable backend (AWS / APIs)
-* Improve AI evaluation & prompt reliability
-
----
-
-## 💡 Author
-
-Built by **Nithin Arisetty**
-Data Analytics | AI-driven Decision Systems
-
----
-
-## ⭐ If you found this useful
-
-Give the repo a ⭐ and feel free to connect!
+- add model performance reporting for churn scoring
+- support direct CSV upload validation feedback
+- extend experiment recommendations with prioritisation scoring
+- add deployment-ready configuration for broader demo use
